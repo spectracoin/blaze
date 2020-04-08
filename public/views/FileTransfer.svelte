@@ -304,7 +304,7 @@
         if (data.end) {
 
           if (fileParts.length) {
-            download(new Blob(fileParts), 'Slive_${Date.now()}.zip');
+            download(new Blob(fileParts), 'Slive_' + Date.now() + '.zip');
             fileParts = [];
             size = 0;
             intPerc = 25;
